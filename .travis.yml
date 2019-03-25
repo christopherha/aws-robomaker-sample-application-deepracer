@@ -26,8 +26,6 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_670ffd5d6b74_key -iv $encrypted_670ffd5d6b74_iv
   -in github_deploy.pem.enc -out github_deploy.pem -d
 - pip install --user awscli
-- openssl aes-256-cbc -K $encrypted_73b0d6ab4894_key -iv $encrypted_73b0d6ab4894_iv
-  -in github_deploy.pem.enc -out github_deploy.pem -d
 install:
 - git clone --branch ws-builds https://github.com/aws-robotics/travis-scripts.git
   .ros_ci
